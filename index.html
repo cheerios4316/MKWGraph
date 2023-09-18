@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mario Kart Wii Graph</title>
+
+        <link rel="stylesheet" href="./style/main.css" />
+
+        <!-- Chart.JS -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <!-- Data and functions-->
+        <script src="data/pb_data.js"></script>
+        <script src="./script/main.js"></script>
+    </head>
+
+    <body>
+        <div>
+            <div class="selectContainer">
+                <select id="cupSelect"></select>
+                <select id="circuitSelect"></select>
+            </div>
+
+            <div class="chartContainer">
+                <canvas id="grafico"></canvas>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        const selects = [
+            {
+                id: "cupSelect",
+                type: "cup",
+            },
+            {
+                id: "circuitSelect",
+                type: "circuit",
+            },
+        ];
+
+        initChart("grafico");
+        initSelect(selects);
+    </script>
+</html>

@@ -1,0 +1,23 @@
+body {
+    background-color: #222;
+}
+
+select {
+    border: none;
+    background-color: #333;
+    color: #aaa;
+    border-radius: .2rem;
+    margin: .2rem;
+    flex-grow: 10;
+    height: 2rem;
+    text-align: center;
+}
+
+.selectContainer {
+    display: flex;
+}
+
+.chartContainer {
+    width: 60vw;
+    height: 60vh;
+}
